@@ -1,0 +1,51 @@
+h1{
+    font-size: 40px;
+    color: #29a3a3;
+    font-weight: bold;
+    font-style: oblique;
+}
+h2{
+    font-size: 30px;
+    color: #29a3a3;
+    font-weight: bold;
+    font-style: oblique;
+}
+.Latitude temp Map{
+    margin: 30px;
+    
+
+}
+.navbar .navbar-brand {
+    color: white;
+    background: #29a3a3;
+    box-sizing: border-box;
+}
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    margin:0 auto;
+    padding-left: 70px;
+    color: #5191fd;
+}
+.navbar-toggle {
+    z-index:3;
+}   
+footer{
+    position: bottom;
+    padding-block-end: 3px;
+    padding-block-start: 5px;
+    background: #5191fd;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    width: 100%; 
+    border-top: 20px;  
+    border-top-color:#006699;
+    border-width: 5px;
+    border-top-style: solid;    
+}
+
+
+   
