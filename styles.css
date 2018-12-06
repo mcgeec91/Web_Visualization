@@ -8,6 +8,17 @@ p{
     font-size: 20px;
     font-weight: 500;
 }
+h6{
+    {
+        text-align: left;
+        font-size: 40px;
+        color: #29a3a3;
+        font-weight: bold;
+    }
+}
+.h7{position: fixed;
+    nav-up: auto;
+}
 h2{
     font-size: 30px;
     color: #29a3a3;
@@ -40,7 +51,6 @@ img{
     margin-bottom: 5px;
     padding-left: 0%;
     padding-right:10px;
-    border:5px;
 }
 .navbar .navbar-brand {
     color: white;

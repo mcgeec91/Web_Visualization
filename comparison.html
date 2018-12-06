@@ -2,81 +2,71 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>Chris McGee presents: Latitude</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Comparison tab</title>
 
         <nav class="navbar navbar-default" role="navigation">
-                <div class="navbar-header">
+                <div class="container_fluid">
+                        <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                   </button>    
-                </div>
+                
                 <a class="navbar-brand"  href="https://mcgeec91.github.io/Web_Visualization/index.html">Latitude</a>
+            </div>
                 <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="https://mcgeec91.github.io/Web_Visualization/comparison.html">Comparison</a></li>
-                        <li class="active"><a href="https://mcgeec91.github.io/Web_Visualization/comparison.html">Comparison</a></li>
-                    <ul class="dropdown-menu">
-                            <li><a href="https://mcgeec91.github.io/Web_Visualization/latitude.html">Max Temp for Latitude</a></li>
-                            <li><a href="https://mcgeec91.github.io/Web_Visualization/cloudy_plot.html">Cloudiness vs Latitude</a></li>
-                            <li><a href="https://mcgeec91.github.io/Web_Visualization/humidity_plot.html">Humidity vs Latitude</a></li>
-                            <li><a href="https://mcgeec91.github.io/Web_Visualization/wind_plot.html">Wind Speed vs Latitude</a></li>
-                          </ul>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
-                      
+                        
+                        <li class ="nav-item dropdown">
+                                <a class ="nav-link dropdown-toggle" data-toggle="dropdown" data-target ="#dropdown_target" href="#"> Plots
+                                <span class ="caret"></span>
+                                </a>
+                                <ul class ="dropdown-menu" aria-labelledby="dropdown_target">
+                                        <li><a href="https://mcgeec91.github.io/Web_Visualization/latitude_plot.html">Max Temp for Latitude</a></li>
+                                        <li><a href="https://mcgeec91.github.io/Web_Visualization/cloudy_plot.html">Cloudiness vs Latitude</a></li>
+                                        <li><a href="https://mcgeec91.github.io/Web_Visualization/humidity_plot.html">Humidity vs Latitude</a></li>
+                                        <li><a href="https://mcgeec91.github.io/Web_Visualization/wind_plot.html">Wind Speed vs Latitude</a></li>
+                              </ul>
+                            </li>
+                        <li><a href="https://mcgeec91.github.io/Web_Visualization/comparison.html">Comparison</a></li>
+                        <li><a href="https://mcgeec91.github.io/Web_Visualization/weather_data.html">Data</a></li>
+
                   </ul>
                 </div>
-              </nav>
-                                      
-<main class="total">
-    <section id="main">
-        <section id="figure">
-                <br>
-                <br>
-                <br>
-                <br>
-        <div class="container">
-                <article>
-                    <div class="row">    
-                            <div class="col-md-7 col-sm-12" style="background-color:yellow;">
-                                    <br><h1>Summary: Latitude vs. X</h1><br>
-                                    <hr>
-                                    <style>
-                                            img {
-                                              float: left;
-                                            }
-                                            div.row{
-    line-height: 200%;
-}
-                                            </style>
-                                    <img style = "float: left,width:50%" id="lat" >
-                                    <a  href="https://mcgeec91.github.io/Web_Visualization/latitude_plot.html"><img width="200" height="200" src="Plots/Max_Temp_vs_Latitude.png" alt="Latitude temp Map"  ALIGN=”left” /></a>                                    The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
- 
-
-                                    <BR CLEAR=”right” />
-                               <br>
-
-             After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.    
-                            </div>
-             <div class="col-md-5 col-sm-12" style="background-color:rgb(167, 167, 101);">  <br><h2>Visualizations</h2><br>
-                <hr>
-                <figure class="col-md-5 col-sm-3 col-xs-3">
-                        <a  href="https://mcgeec91.github.io/Web_Visualization/cloudy_plot.html"><img  width="150" height="150" src="Plots/Cloudiness_vs_Latitude.png" alt="Cloudy Map" ></a></figure>
-                    <figure class="col-md-5 col-sm-3 col-xs-3">
-                        <a  href="https://mcgeec91.github.io/Web_Visualization/humidity_plot.html"><img width="150" height="150" src="Plots/Humidity_vs_Latitude.png" alt="Humidity Map"></figure></a>
-                        <figure class="col-md-5 col-sm-3 col-xs-3">
-                            <a  href="https://mcgeec91.github.io/Web_Visualization/wind_plot.html"><img width="150" height="150" src="Plots/Wind_Speed_vs_Latitude.png" alt="Wind Speed Map"></figure></a>
-                            <figure class="col-md-5 col-sm-3 col-xs-3">
-                                    <a  href="https://mcgeec91.github.io/Web_Visualization/latitude_plot.html"><img width="150" height="150" src="Plots/Max_Temp_vs_Latitude.png" alt="Latitude temp Map"></figure></a>                  
             </div>
+        </nav>
+                                      
+        <main class="total">
+                <section id="main">
+                    <section id="figure">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                    <div class="container">
+                            <article>
+                                <div class="row" style="padding:5px">   
+                                                <div class="col-md-12 col-sm-12 xs-12" style="background-color:white;">
+                                    <br><br><h1>Comparison: Latitude vs X</h1><br><hr>
+                                    <h6>Click any plot to get an in depth analysis.</h6><br>
+                        <figure class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <a  href="https://mcgeec91.github.io/Web_Visualization/cloudy_plot.html"><h7>vs. Cloudiness (%)</h7><img  width="400" height="300" src="Plots/Cloudiness_vs_Latitude.png" alt="Cloudy Map" ></a></figure>
+                        <figure class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <a  href="https://mcgeec91.github.io/Web_Visualization/humidity_plot.html"><h7>vs. Humidity (%)</h7><img width="400" height="300" src="Plots/Humidity_vs_Latitude.png" alt="Humidity Map"></figure></a>
+                        <figure class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a  href="https://mcgeec91.github.io/Web_Visualization/wind_plot.html"><h7>vs. Wind Speed (mph)</h7><img width="400" height="300" src="Plots/Wind_Speed_vs_Latitude.png" alt="Wind Speed Map"></figure></a>
+                            <figure class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <a  href="https://mcgeec91.github.io/Web_Visualization/latitude_plot.html"><h7>vs. Max Temperature (°F)</h7><img width="400" height="300" src="Plots/Max_Temp_vs_Latitude.png" alt="Latitude temp Map"></figure></a>                  
+                                    <br></div>
                             </div>
     </section>
         </section>
@@ -87,8 +77,8 @@
                 <br><br><br>
                 <footer>
 
-                        <p>© Copyright Chris McGee 2018
-                           </p>      
+                        <p1>© Copyright Chris McGee 2018
+                           </p1>      
                       </footer>         
         </body>
     </main>
